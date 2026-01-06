@@ -1,0 +1,1 @@
+void main(){float k1=0.2;vec2 uv=v_texcoord;vec2 c=uv*2.0-1.0;float r2=dot(c,c);vec2 d=c/(1.0+k1*r2);vec2 f=(d+1.0)/2.0;if(f.x<0.0||f.x>1.0||f.y<0.0||f.y>1.0)gl_FragColor=vec4(0.0,0.0,0.0,1.0);else gl_FragColor=texture2D(tex,f);}
